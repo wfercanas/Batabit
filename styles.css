@@ -214,3 +214,88 @@ main {
 .commissions p {
   background-color: var(--soft-blue);
 }
+
+/* Products */
+
+.products {
+  position: relative;
+  background-color: var(--warm-black);
+  padding: 8rem 1rem 5rem;
+}
+
+.products__icon {
+  width: 6rem;
+  height: 6rem;
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 3rem);
+  background-image: url('./assets/icons/batata.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.products__title {
+  font-size: 2.4rem;
+  color: var(--just-white);
+  text-align: center;
+}
+
+.products__subtitle {
+  color: var(--dark-grey);
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.products__container {
+  display: grid;
+  justify-content: center;
+  row-gap: 1.6rem;
+}
+
+.products__card {
+  background-color: var(--black);
+  padding: 2rem 2rem 2.2rem 1.6rem;
+  max-width: 40rem;
+}
+
+.products__card--icon {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+
+#clock {
+  background-image: url('./assets/icons/clock.svg');
+}
+
+#eye {
+  background-image: url('./assets/icons/eye.svg');
+}
+
+#dollar {
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+#check {
+  background-image: url('./assets/icons/check-circle.svg');
+}
+
+.products__card--title {
+  color: var(--just-white);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.products__card--content {
+  color: var(--dark-grey);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
