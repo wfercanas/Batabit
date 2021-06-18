@@ -435,3 +435,26 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Footer */
+footer {
+  padding: 4rem 0;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer li {
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+
+footer li:hover {
+  cursor: pointer;
+}
