@@ -1,0 +1,15 @@
+@media screen and (min-width: 640px) {
+  .exchange__tables--container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .products__container {
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .plans__container {
+    justify-content: center;
+  }
+}

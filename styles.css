@@ -267,6 +267,9 @@ main {
 .products__container {
   display: grid;
   justify-content: center;
+  justify-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
   row-gap: 1.6rem;
 }
 
