@@ -7,6 +7,8 @@
   --warm-black: #201e1c;
   --black: #282623;
   --grey: #bababa;
+  --mid-gray: #b5b0ac;
+  --dark-grey: #757575;
   --off-white: #faf8f7;
   --just-white: #ffffff;
 }
@@ -89,4 +91,126 @@ header img {
   height: 0.8rem;
   margin-left: 1rem;
   background-image: url('./assets/icons/down-arrow.svg');
+}
+
+/* Main */
+main {
+  width: 100%;
+  background-color: var(--off-white);
+}
+
+.exchange {
+  padding: 6rem 0 3rem;
+  text-align: center;
+}
+
+.exchange__image-container img {
+  width: 20rem;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.exchange__title {
+  width: 90%;
+  min-width: 28rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.exchange__title h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.exchange__title p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.exchange__tables--grid {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 12rem);
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  gap: 0.1rem;
+}
+
+.exchange__tables--title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: calc(50% - 11rem);
+  margin-bottom: 1rem;
+}
+
+#moneys-title {
+  color: var(--bitcoin-orange);
+}
+
+#commissions-title {
+  color: var(--secondary-blue);
+}
+
+.exchange__tables--money,
+.exchange__tables--price {
+  background-color: var(--just-white);
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.exchange__tables--money {
+  color: var(--mid-gray);
+  font-family: 'Inter', sans-serif;
+}
+
+.exchange__tables--price {
+  color: var(--dark-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exchange__tables--downgraph,
+.exchange__tables--upgraph {
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exchange__tables--upgraph {
+  background-image: url('./assets/icons/trending-up.svg');
+}
+
+.exchange__tables--downgraph {
+  background-image: url('./assets/icons/trending-down.svg');
+}
+
+.exchange__tables--updated {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.exchange__tables--updated p {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.moneys p {
+  background-color: var(--soft-orange);
+}
+
+.commissions p {
+  background-color: var(--soft-blue);
 }
