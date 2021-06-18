@@ -134,6 +134,20 @@ main {
   color: #757575;
 }
 
+.exchange__tables--container {
+  padding: 0 6rem;
+  display: flex;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+
+.exchange__tables--table {
+  margin: 0 1rem;
+  scroll-snap-align: center;
+}
+
 .exchange__tables--grid {
   display: inline-grid;
   grid-template-columns: repeat(2, 12rem);
@@ -323,7 +337,7 @@ main {
 /* plans */
 .plans {
   background-color: var(--off-white);
-  padding: 7rem 0;
+  padding: 4rem 0 0;
 }
 
 .plans__title {
@@ -345,9 +359,8 @@ main {
 
 .plans__container {
   padding: 4rem 0 6rem;
-  margin-top: 5rem;
+  margin: 2rem auto 0;
   display: flex;
-  justify-content: center;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x proximity;
