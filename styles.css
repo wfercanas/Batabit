@@ -22,6 +22,7 @@
 html {
   font-size: 10px;
   font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -303,7 +304,7 @@ main {
 /* Meet today */
 .meet-today {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
   max-width: 90rem;
   min-width: 32rem;
   background-image: url('./assets/img/bitcoinbaby2x.png');
@@ -318,4 +319,119 @@ main {
   text-align: center;
   padding-top: 6.4rem;
   color: var(--just-white);
+}
+
+/* plans */
+.plans {
+  background-color: var(--off-white);
+  padding: 7rem 0;
+}
+
+.plans__title {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 1.5rem;
+}
+
+.plans__subtitle {
+  margin: 2.4rem 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.plans__container {
+  padding: 4rem 0 6rem;
+  margin-top: 5rem;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plans__card {
+  position: relative;
+  margin: 0 1rem;
+  scroll-snap-align: center;
+  background-color: var(--just-white);
+  box-shadow: 0px 4px 8px var(--grey);
+  border-radius: 1rem;
+  width: 60%;
+  min-width: 24rem;
+  max-width: 30rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.plans__card--recommended {
+  position: absolute;
+  top: -1.5rem;
+  left: calc(50% - 5rem);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white);
+  text-align: center;
+}
+
+.plans__card--title {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.plans__card--price {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.plans__card--price span {
+  position: absolute;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  top: 1.2rem;
+  left: calc(50% - 4.5rem);
+}
+
+.plans__card--description {
+  font-size: 1.2rem;
+  color: var(--dark-grey);
+  margin: 1.6rem;
+}
+
+.plans__card button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 70%;
+  max-width: 20rem;
+  background-color: var(--off-white);
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.plans__card button:hover {
+  cursor: pointer;
+}
+
+.plans__card button span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1.2rem;
+  background-image: url('./assets/icons/orange-right-arrow.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
