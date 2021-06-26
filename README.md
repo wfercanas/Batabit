@@ -1,5 +1,5 @@
 # Batabit
-Difficulty: ⚪ Very Easy
+### Difficulty: ⚪ Very Easy
 
 ## Project URL
 🚀 You can check the project working in the following link: https://wfercanas.github.io/Batatabit/
