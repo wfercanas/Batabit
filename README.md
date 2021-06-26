@@ -1,4 +1,4 @@
-# Batabit
+# Batatabit
 ### Difficulty: ⚪ Very Easy
 
 ## Project URL
